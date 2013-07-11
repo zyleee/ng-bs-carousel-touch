@@ -1,0 +1,13 @@
+{
+  "name": "ng-bs-carousel-touch",
+  "version": "0.0.1",
+  "main": "ng-bs-carousel-touch.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
