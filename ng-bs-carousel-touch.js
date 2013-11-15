@@ -15,13 +15,13 @@ angular.module('ng.bs.carousel.touch', ['ui.bootstrap.carousel'])
       $(element).on({
         'touchstart': function(e)
         {
-          slide.startX = e.originalEvent.pageX;
+          slide.startX = e.originalEvent.changedTouches[0].pageX;
           scope.pause();
           slide.isMoved = false;
         },
         'touchmove': function(e)
         {
-          slide.currentX = e.originalEvent.pageX;
+          slide.currentX = e.originalEvent.changedTouches[0].pageX;
 
           if( slide.startX > slide.currentX && !slide.isMoved) {
             scope.next();
